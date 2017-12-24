@@ -788,7 +788,18 @@
     background: #f00;
     height: 500px; }
   .contacts-content {
-    padding: 20px 0 0 0; } }
+    padding: 20px 0 0 0; }
+  .order-modal .modal-dialog {
+    width: auto;
+    max-width: 450px;
+    margin: 10px auto; }
+  .modal-content {
+    margin: 0 10px; }
+  .modal .close {
+    right: 5px;
+    top: 5px; }
+  .modal-header {
+    padding-top: 30px; } }
 
 /* Tablet END */
 /* Mobile */
