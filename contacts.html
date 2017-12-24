@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/retina.css">
+  </head>
+  <body>
+    <div id="mobile-indicator"></div>
+    <div id="sm-indicator"></div>
+    <header class="header-inner contacts-header">
+      <div class="container">
+        <div class="header-top">
+          <div class="row">
+            <div class="header-logo"><img class="logo-normal" src="images/logo.png" alt="АФК"><img class="logo-fixed" src="images/logo-fixed.png" alt="АФК"></div>
+            <div class="header-menu">
+              <div class="header-menu-item"><a href="#">О компании</a></div>
+              <div class="header-menu-item"><a href="#">Контакты</a></div>
+            </div>
+            <div class="header-contacts">
+              <div class="header-contacts-phone"><a href="tel:+74951207751">+7 (495) 120-77-51</a></div>
+              <div class="header-contacts-address">Москва, 2-я Звенигородская ул., 13, стр. 41</div>
+            </div>
+            <div class="header-button"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#orderModal">Получить кредит</a></div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="navbar-trigger"><span></span><span></span><span></span></div>
+          <div class="nav collapse navbar-collapse" id="bs-navbar">
+            <div class="navbar-wrapper"><a class="user-link hidden-sm hidden-md hidden-lg" href="#">
+                <div class="ico icon-user"></div></a>
+              <ul class="nav navbar-nav">
+                <li><a href="#">
+                    <div class="cont">Кредит</div></a>
+                  <div class="submenu">
+                    <ul>
+                      <li><a href="#">Кредит под залог недвижимости</a></li>
+                      <li><a href="#">Кредит бизнесу</a></li>
+                      <li><a href="#">Потребительский кредит</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">
+                    <div class="cont">Рефинансирование</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Банкротство физ. лиц</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Ипотека коммерческая недвижимость</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Кредит под залог авто</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Срочный выкуп</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Покупка/ Продажа</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Страхование инвестиций</div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="contacts-wrapper">
+        <div class="contacts-map" id="contactsMap"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-5 col-lg-4">
+              <div class="contacts-content">
+                <ul class="breadcrumb">
+                  <li><a href="#">Главная</a></li>
+                  <li>Контакты</li>
+                </ul>
+                <h1>Контакты</h1>
+                <div class="contacts-info">
+                  <div class="contacts-info-item">
+                    <div class="contacts-info-ico"><img src="images/ico-contacts-phone.png"></div>
+                    <div class="contacts-info-descr">
+                      <div class="contacts-info-phone"><a href="tel:+74951207751">+7 (495) 120-77-51</a></div><a class="callback-link" href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a>
+                    </div>
+                  </div>
+                  <div class="contacts-info-item">
+                    <div class="contacts-info-ico"><img src="images/ico-contacts-address.png"></div>
+                    <div class="contacts-info-descr">г. Москва, м. 1905 года,<br>2-ая Звенигородская ул.,<br>13, стр. 41</div>
+                  </div>
+                  <div class="contacts-info-item">
+                    <div class="contacts-info-ico"><img src="images/ico-contacts-email.png"></div>
+                    <div class="contacts-info-descr"><a href="mailto:info@afc.ru">info@afc.ru</a></div>
+                  </div>
+                </div>
+                <div class="contacts-pic"><img src="files/contacts-pic.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <div class="footer-logo"><a href="/"><img src="images/logo-footer.png" alt="АФК"></a></div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9">
+              <div class="footer-contacts">
+                <div class="footer-contacts-item">
+                  <div class="footer-phone"><a class="tel" href="+74951207751">+7 (495) 120-77-51</a></div>
+                </div>
+                <div class="footer-contacts-item">
+                  <div class="footer-email"><a href="mailto:info@credit-afc.ru">info@credit-afc.ru</a></div>
+                </div>
+                <div class="footer-contacts-item">
+                  <div class="footer-address">Москва, 2-я Звенигородская ул., 13, стр. 41</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">&copy; Ассоциация Финансовых Консультантов. Все права защищены, 2017 г.</div>
+      </div>
+    </footer><div class="modal fade order-modal" id="orderModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-ico modal-ico-order"></div>
+        <div class="h2">Получить кредит</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="order-form-wrapper">
+          <div class="order-modal-form">
+            <form id="orderForm2">
+              <div class="form-group">
+                <label for="order_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="order_name" id="order_name" required >
+              </div>
+              <div class="form-group">
+                <label for="order_phone" class="placeholder">Телефон</label>
+                <input type="text" name="order_phone" id="order_phone" class="input-phone phone-email-group">
+              </div>
+              <div class="form-group">
+                <label for="order_email" class="placeholder">Ваш e-mail</label>
+                <input type="email" name="order_email" id="order_email" class="input-email phone-email-group">
+              </div>
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <input class="input-agree" type="checkbox" id="order_agree" name="order_agree" required="" aria-required="true">
+                  <label for="order_agree">Я согласен на обработку персональных данных</label>
+                </div>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade order-modal" id="callbackModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-ico modal-ico-order"></div>
+        <div class="h2">Заказать звонок</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="order-form-wrapper">
+          <div class="order-modal-form">
+            <form id="orderForm2">
+              <div class="form-group">
+                <label for="callback_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="callback_name" id="callback_name" required >
+              </div>
+              <div class="form-group">
+                <label for="callback_phone" class="placeholder">Телефон</label>
+                <input type="text" name="callback_phone" id="callback_phone" class="input-phone" required>
+              </div>
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <input class="input-agree" type="checkbox" id="callback_agree" name="callback_agree" required aria-required="true">
+                  <label for="callback_agree">Я согласен на обработку персональных данных</label>
+                </div>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade order-modal credit-modal" id="creditModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-ico modal-ico-order"></div>
+        <div class="h2">Получить кредит</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="order-form-wrapper">
+          <div class="order-modal-form">
+            <form id="creditForm2">
+              <div class="form-group">
+                <label for="credit_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="credit_name" id="credit_name" required >
+              </div>
+              <div class="form-group">
+                <label for="credit_phone" class="placeholder">Телефон</label>
+                <input type="text" name="credit_phone" id="credit_phone" class="input-phone phone-email-group">
+              </div>
+              <div class="form-group">
+                <label for="credit_email" class="placeholder">Ваш e-mail</label>
+                <input type="email" name="credit_email" id="credit_email" class="input-email phone-email-group">
+              </div>
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <input class="input-agree" type="checkbox" id="credit_agree" name="credit_agree" required="" aria-required="true">
+                  <label for="credit_agree">Я согласен на обработку персональных данных</label>
+                </div>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade order-modal" id="askModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-ico modal-ico-order"></div>
+        <div class="h2">Задать вопрос</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ask-form-wrapper">
+          <div class="ask-modal-form">
+            <form id="askForm2">
+              <div class="form-group">
+                <label for="ask_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="ask_name" id="ask_name" required >
+              </div>
+              <div class="form-group">
+                <label for="ask_phone" class="placeholder">Телефон</label>
+                <input type="text" name="ask_phone" id="ask_phone" class="input-phone phone-email-group">
+              </div>
+              <div class="form-group">
+                <label for="ask_email" class="placeholder">Ваш e-mail</label>
+                <input type="email" name="ask_email" id="ask_email" class="input-email phone-email-group">
+              </div>
+              <div class="form-group">
+                <label for="ask_message" class="placeholder">Ваш вопрос</label>
+                <textarea name="ask_message" id="ask_message" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <input class="input-agree" type="checkbox" id="ask_agree" name="ask_agree" required="" aria-required="true">
+                  <label for="ask_agree">Я согласен на обработку персональных данных</label>
+                </div>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade success-modal" id="successModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="h2">Ваша заявка успешно отправлена!</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Финансовый специалист свяжется с вами в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/additional-methods.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wNumb.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKKzl2zYJy_aTqe-1wAI0BHOrDNvVbEY&callback=initMap" async defer></script>
+  </body>
+</html>

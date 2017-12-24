@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/retina.css">
+  </head>
+  <body>
+    <div id="mobile-indicator"></div>
+    <div id="sm-indicator"></div>
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <div class="row">
+            <div class="header-logo"><img class="logo-normal" src="images/logo.png" alt="АФК"><img class="logo-fixed" src="images/logo-fixed.png" alt="АФК"></div>
+            <div class="header-menu">
+              <div class="header-menu-item"><a href="#">О компании</a></div>
+              <div class="header-menu-item"><a href="#">Контакты</a></div>
+            </div>
+            <div class="header-contacts">
+              <div class="header-contacts-phone"><a href="tel:+74951207751">+7 (495) 120-77-51</a></div>
+              <div class="header-contacts-address">Москва, 2-я Звенигородская ул., 13, стр. 41</div>
+            </div>
+            <div class="header-button"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#orderModal">Получить кредит</a></div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="navbar-trigger"><span></span><span></span><span></span></div>
+          <div class="nav" id="bs-navbar">
+            <div class="navbar-wrapper"><a class="user-link hidden-sm hidden-md hidden-lg" href="#">
+                <div class="ico icon-user"></div></a>
+              <ul class="nav navbar-nav">
+                <li class="hidden-sm hidden-md hidden-lg"><a href="#">
+                    <div class="cont">О компании</div></a></li>
+                <li class="hidden-sm hidden-md hidden-lg"><a href="#">
+                    <div class="cont">Контакты</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Кредит</div></a>
+                  <div class="submenu">
+                    <ul>
+                      <li><a href="#">Кредит под залог недвижимости</a></li>
+                      <li><a href="#">Кредит бизнесу</a></li>
+                      <li><a href="#">Потребительский кредит</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">
+                    <div class="cont">Рефинансирование</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Банкротство физ. лиц</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Ипотека коммерческая недвижимость</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Кредит под залог авто</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Срочный выкуп</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Покупка/ Продажа</div></a></li>
+                <li><a href="#">
+                    <div class="cont">Страхование инвестиций</div></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <section class="main-section main-section-top">
+        <div class="section-bg" style="background-image:url(files/page-about-bg.jpg);"></div>
+        <div class="section-content">
+          <div class="container">
+            <ul class="breadcrumb">
+              <li><a href="#">Главная</a></li>
+              <li>О компании</li>
+            </ul>
+            <h1>О компании</h1>
+            <div class="numbers">
+              <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                  <div class="numbers-item">
+                    <div class="numbers-item-num">98%
+                      <div class="numbers-item-ico numbers-item-ico-1"></div>
+                    </div>
+                    <div class="numbers-item-ttl">вероятность одобрения кредита</div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="numbers-item">
+                    <div class="numbers-item-num">375
+                      <div class="numbers-item-ico numbers-item-ico-2"></div>
+                    </div>
+                    <div class="numbers-item-ttl">одобренных кредитов</div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="numbers-item">
+                    <div class="numbers-item-num">6
+                      <div class="numbers-item-ico numbers-item-ico-3"></div>
+                    </div>
+                    <div class="numbers-item-ttl">лет на рынке финансовых услуг</div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                  <div class="numbers-item">
+                    <div class="numbers-item-num">13
+                      <div class="numbers-item-ico numbers-item-ico-4"></div>
+                    </div>
+                    <div class="numbers-item-ttl">квалифицированных специалистов</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-section main-section-afk">
+        <div class="container">
+          <div class="section-content">
+            <div class="h2">Ассоциация Финансовых Консультантов</div>
+            <div class="afk-text">
+              <p>В нашей команде работают сильнейшие специалисты, занимающие в прошлом высокие посты крупнейших российских банков. Их опыт и возможности дают нашим клиентам неоспоримые преимущества в решении задач привлечения финансирования на новые проекты и личные цели. Наши сотрудники постоянно повышают свой профессионализм на различных семинарах и конференциях финансовой сферы.</p>
+              <p>Налаженные партнерские отношения с ведущими банками и частными инвесторами дают нам возможность привлечь для Вас деньги на самых выгодных условиях. Более чем 6 летний опыт работы позволяет нам решать задачи любой сложности и любого характера. Мы уверены в своих силах и гарантируем результат нашей работы.</p>
+              <p>Подтверждением тому, отсутствие каких-либо предоплат за нашу работу. Вы оплачиваете наши услуги только в том случае, если мы решили Вашу задачу и деньги уже у Вас в руках.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-section main-section-team">
+        <div class="section-content">
+          <div class="section-team-header">
+            <div class="container">
+              <div class="h2">Команда АФК</div>
+              <div class="team-ceo">
+                <div class="ceo-pic"><img src="images/ceo.jpg"></div>
+                <div class="ceo-name">Скорылёв Алексей Иванович</div>
+                <div class="ceo-post">Генеральный директор компании</div>
+              </div>
+              <div class="team-ceo-cite">
+                <p>В нашей команде работают сильнейшие специалисты, занимающие в прошлом высокие посты крупнейших российских банков. Их опыт и возможности дают нашим клиентам неоспоримые преимущества в решении задач привлечения финансирования на новые проекты и личные цели. Наши сотрудники постоянно повышают свой профессионализм на различных семинарах и конференциях финансовой сферы.</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-team-people">
+            <div class="container">
+              <div class="people-list">
+                <div class="row">
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-1.jpg"></div>
+                      <div class="people-tmb-name">Александр Константинов</div>
+                      <div class="people-tmb-post">Юрист</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-2.jpg"></div>
+                      <div class="people-tmb-name">Олег Иванов</div>
+                      <div class="people-tmb-post">Ведущий специалист кредитного отдела</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-3.jpg"></div>
+                      <div class="people-tmb-name">Ольга Первова</div>
+                      <div class="people-tmb-post">Специалист кредитного отдела</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-4.jpg"></div>
+                      <div class="people-tmb-name">Иван Петров</div>
+                      <div class="people-tmb-post">Юрист</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-1.jpg"></div>
+                      <div class="people-tmb-name">Александр Константинов</div>
+                      <div class="people-tmb-post">Юрист</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-2.jpg"></div>
+                      <div class="people-tmb-name">Олег Иванов</div>
+                      <div class="people-tmb-post">Ведущий специалист кредитного отдела</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-3.jpg"></div>
+                      <div class="people-tmb-name">Ольга Первова</div>
+                      <div class="people-tmb-post">Специалист кредитного отдела</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-4.jpg"></div>
+                      <div class="people-tmb-name">Иван Петров</div>
+                      <div class="people-tmb-post">Юрист</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-1.jpg"></div>
+                      <div class="people-tmb-name">Александр Константинов</div>
+                      <div class="people-tmb-post">Юрист</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-2.jpg"></div>
+                      <div class="people-tmb-name">Олег Иванов</div>
+                      <div class="people-tmb-post">Ведущий специалист кредитного отдела</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-3.jpg"></div>
+                      <div class="people-tmb-name">Ольга Первова</div>
+                      <div class="people-tmb-post">Специалист кредитного отдела</div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-3">
+                    <div class="people-tmb">
+                      <div class="people-tmb-pic"><img src="files/people-tmb-4.jpg"></div>
+                      <div class="people-tmb-name">Иван Петров</div>
+                      <div class="people-tmb-post">Юрист</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-section main-section-pros">
+        <div class="container">
+          <div class="section-content">
+            <div class="afk">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="afk-item">
+                    <div class="afk-item-ttl">Высокая квалификация финансовых специалистов</div>
+                    <div class="afk-item-text">
+                      <p>Компания АФК это группа высококвалифицированных финансовых специалистов с многолетним стажем работы в сфере банковского дела. С 2011 года основным направлением услуг компании является кредитование физических и юридических лиц под залог недвижимости.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="afk-item">
+                    <div class="afk-item-ttl">Максимально выгодно и&nbsp;оперативно</div>
+                    <div class="afk-item-text">
+                      <p>Сотрудничая с рядом Московских банков и частными инвестиционными компаниями мы имеем возможность подобрать максимально выгодные условия для решения вашей задачи и совершить все процедуры  максимально оперативно.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="afk-item">
+                    <div class="afk-item-ttl">Прозрачная система формирования стоимости</div>
+                    <div class="afk-item-text">
+                      <p>В осуществлении задач мы не закладываем скрытых комиссий. Благодаря прозрачной системе формирования стоимости услуг клиент всегда знает из чего складывается стоимость  работ.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="afk-item">
+                    <div class="afk-item-ttl">Решение любых финансовых вопросов</div>
+                    <div class="afk-item-text">
+                      <p>Мы оказываем услуги профессионально и качественно. Наши специалисты всегда готовы оказать помощь в решении любых финансовых вопросов.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-section main-section-cases">
+        <div class="container">
+          <div class="section-content">
+            <div class="h2">Кейсы клиентов</div>
+            <div class="cases-slider">
+              <div class="slide">
+                <div class="cases-item">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="cases-item-l">
+                        <div class="cases-item-data">
+                          <div class="h4">Сделка</div>
+                          <div class="num"><span>№</span> 123456</div>
+                          <div class="h4">Клиент</div>
+                          <div class="client">Константиновский Александр Михайлович</div>
+                        </div><a class="cases-item-video fancybox-video" href="https://www.youtube.com/embed/_-MTZCP3mVg?autoplay=1">
+                          <div class="text">Смотреть<br>видео-отзыв</div></a>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="cases-item-r">
+                        <div class="h4">Проблема</div>
+                        <p>Работодатель отказался подтверждать серый доход из-за чего получили относительно высокую ставку.</p>
+                        <div class="h4">Результаты</div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                            <ul class="checked-list">
+                              <li>Одобрили ипотеку: <span>2 300 000 р.</span></li>
+                              <li>Срок: <span>15 лет</span></li>
+                              <li>Ставка: <span>16%</span></li>
+                            </ul>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <ul class="checked-list">
+                              <li>Взнос: <span>50%</span></li>
+                              <li>Одобрение получили: <span>на 3 дня</span></li>
+                              <li>Вышли на сделку: <span>за 24 дня</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="big">
+                          <p>Возможность кредитования под залог недвижимости позволила срочным образом получить крупную сумму с минимальным кол-ом документов, что позволило решить мне проблему ….. в срок, и, за оговоренный срок, погасить сумму кредита. Не пришлось продавать квартиру для решения вопроса. И проблема решена и квартира на месте!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="cases-item">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="cases-item-l">
+                        <div class="cases-item-data">
+                          <div class="h4">Сделка</div>
+                          <div class="num"><span>№</span> 12323</div>
+                          <div class="h4">Клиент</div>
+                          <div class="client">Иван Петров</div>
+                        </div><a class="cases-item-video fancybox-video" href="https://www.youtube.com/embed/_-MTZCP3mVg?autoplay=1">
+                          <div class="text">Смотреть<br>видео-отзыв</div></a>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="cases-item-r">
+                        <div class="h4">Проблема</div>
+                        <p>Работодатель отказался подтверждать серый доход из-за чего получили относительно высокую ставку.</p>
+                        <div class="h4">Результаты</div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                            <ul class="checked-list">
+                              <li>Одобрили ипотеку: <span>2 300 000 р.</span></li>
+                              <li>Срок: <span>15 лет</span></li>
+                              <li>Ставка: <span>16%</span></li>
+                            </ul>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <ul class="checked-list">
+                              <li>Взнос: <span>50%</span></li>
+                              <li>Одобрение получили: <span>на 3 дня</span></li>
+                              <li>Вышли на сделку: <span>за 24 дня</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="big">
+                          <p>Возможность кредитования под залог недвижимости позволила срочным образом получить крупную сумму с минимальным кол-ом документов, что позволило решить мне проблему ….. в срок, и, за оговоренный срок, погасить сумму кредита. Не пришлось продавать квартиру для решения вопроса. И проблема решена и квартира на месте!</p>
+                          <p>Возможность кредитования под залог недвижимости позволила срочным образом получить крупную сумму с минимальным кол-ом документов, что позволило решить мне проблему ….. в срок, и, за оговоренный срок, погасить сумму кредита. Не пришлось продавать квартиру для решения вопроса. И проблема решена и квартира на месте!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="cases-item">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <div class="cases-item-l">
+                        <div class="cases-item-data">
+                          <div class="h4">Сделка</div>
+                          <div class="num"><span>№</span> 344344</div>
+                          <div class="h4">Клиент</div>
+                          <div class="client">Сидоров Александр Михайлович</div>
+                        </div><a class="cases-item-video fancybox-video" href="https://www.youtube.com/embed/_-MTZCP3mVg?autoplay=1">
+                          <div class="text">Смотреть<br>видео-отзыв</div></a>
+                      </div>
+                    </div>
+                    <div class="col-xs-8">
+                      <div class="cases-item-r">
+                        <div class="h4">Проблема</div>
+                        <p>Работодатель отказался подтверждать серый доход из-за чего получили относительно высокую ставку.</p>
+                        <div class="h4">Результаты</div>
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                            <ul class="checked-list">
+                              <li>Одобрили ипотеку: <span>2 300 000 р.</span></li>
+                              <li>Срок: <span>15 лет</span></li>
+                              <li>Ставка: <span>16%</span></li>
+                            </ul>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <ul class="checked-list">
+                              <li>Взнос: <span>50%</span></li>
+                              <li>Одобрение получили: <span>на 3 дня</span></li>
+                              <li>Вышли на сделку: <span>за 24 дня</span></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="big">
+                          <p>Возможность кредитования под залог недвижимости позволила срочным образом получить крупную сумму с минимальным кол-ом документов, что позволило решить мне проблему ….. в срок, и, за оговоренный срок, погасить сумму кредита. Не пришлось продавать квартиру для решения вопроса. И проблема решена и квартира на месте!</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-section main-section-order">
+        <div class="container">
+          <div class="section-content">
+            <div class="h2">Оставить заявку</div>
+            <div class="questions-form order-form">
+              <form>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                      <label class="placeholder" for="order_form_name">Ваше имя</label>
+                      <input type="text" id="order_form_name" name="order_form_name" required="required"/>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                      <label class="placeholder" for="order_form_phone">Телефон</label>
+                      <input class="input-phone phone-email-group" type="text" id="order_form_phone" name="order_form_phone"/>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                      <label class="placeholder" for="order_form_email">Ваш e-mail</label>
+                      <input class="phone-email-group" type="email" id="order_form_email" name="order_form_email"/>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                      <div class="form-checkbox">
+                        <input class="input-agree" type="checkbox" id="order_form_agree" name="order_form_agree" required>
+                        <label for="order_form_agree">Я согласен на обработку персональных данных</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-4">
+                    <div class="form-footer">
+                      <input class="btn btn-1" type="submit" value="Отправить заявку">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <div class="footer-logo"><a href="/"><img src="images/logo-footer.png" alt="АФК"></a></div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9">
+              <div class="footer-contacts">
+                <div class="footer-contacts-item">
+                  <div class="footer-phone"><a class="tel" href="+74951207751">+7 (495) 120-77-51</a></div>
+                </div>
+                <div class="footer-contacts-item">
+                  <div class="footer-email"><a href="mailto:info@credit-afc.ru">info@credit-afc.ru</a></div>
+                </div>
+                <div class="footer-contacts-item">
+                  <div class="footer-address">Москва, 2-я Звенигородская ул., 13, стр. 41</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">&copy; Ассоциация Финансовых Консультантов. Все права защищены, 2017 г.</div>
+      </div>
+    </footer><div class="modal fade order-modal" id="orderModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-ico modal-ico-order"></div>
+        <div class="h2">Получить кредит</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="order-form-wrapper">
+          <div class="order-modal-form">
+            <form id="orderForm2">
+              <div class="form-group">
+                <label for="order_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="order_name" id="order_name" required >
+              </div>
+              <div class="form-group">
+                <label for="order_phone" class="placeholder">Телефон</label>
+                <input type="text" name="order_phone" id="order_phone" class="input-phone phone-email-group">
+              </div>
+              <div class="form-group">
+                <label for="order_email" class="placeholder">Ваш e-mail</label>
+                <input type="email" name="order_email" id="order_email" class="input-email phone-email-group">
+              </div>
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <input class="input-agree" type="checkbox" id="order_agree" name="order_agree" required="" aria-required="true">
+                  <label for="order_agree">Я согласен на обработку персональных данных</label>
+                </div>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade order-modal" id="callbackModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-ico modal-ico-order"></div>
+        <div class="h2">Заказать звонок</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="order-form-wrapper">
+          <div class="order-modal-form">
+            <form id="orderForm2">
+              <div class="form-group">
+                <label for="callback_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="callback_name" id="callback_name" required >
+              </div>
+              <div class="form-group">
+                <label for="callback_phone" class="placeholder">Телефон</label>
+                <input type="text" name="callback_phone" id="callback_phone" class="input-phone" required>
+              </div>
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <input class="input-agree" type="checkbox" id="callback_agree" name="callback_agree" required aria-required="true">
+                  <label for="callback_agree">Я согласен на обработку персональных данных</label>
+                </div>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade order-modal credit-modal" id="creditModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-ico modal-ico-order"></div>
+        <div class="h2">Получить кредит</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="order-form-wrapper">
+          <div class="order-modal-form">
+            <form id="creditForm2">
+              <div class="form-group">
+                <label for="credit_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="credit_name" id="credit_name" required >
+              </div>
+              <div class="form-group">
+                <label for="credit_phone" class="placeholder">Телефон</label>
+                <input type="text" name="credit_phone" id="credit_phone" class="input-phone phone-email-group">
+              </div>
+              <div class="form-group">
+                <label for="credit_email" class="placeholder">Ваш e-mail</label>
+                <input type="email" name="credit_email" id="credit_email" class="input-email phone-email-group">
+              </div>
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <input class="input-agree" type="checkbox" id="credit_agree" name="credit_agree" required="" aria-required="true">
+                  <label for="credit_agree">Я согласен на обработку персональных данных</label>
+                </div>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade order-modal" id="askModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-ico modal-ico-order"></div>
+        <div class="h2">Задать вопрос</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ask-form-wrapper">
+          <div class="ask-modal-form">
+            <form id="askForm2">
+              <div class="form-group">
+                <label for="ask_name" class="placeholder">Ваше имя</label>
+                <input type="text" name="ask_name" id="ask_name" required >
+              </div>
+              <div class="form-group">
+                <label for="ask_phone" class="placeholder">Телефон</label>
+                <input type="text" name="ask_phone" id="ask_phone" class="input-phone phone-email-group">
+              </div>
+              <div class="form-group">
+                <label for="ask_email" class="placeholder">Ваш e-mail</label>
+                <input type="email" name="ask_email" id="ask_email" class="input-email phone-email-group">
+              </div>
+              <div class="form-group">
+                <label for="ask_message" class="placeholder">Ваш вопрос</label>
+                <textarea name="ask_message" id="ask_message" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <div class="form-checkbox">
+                  <input class="input-agree" type="checkbox" id="ask_agree" name="ask_agree" required="" aria-required="true">
+                  <label for="ask_agree">Я согласен на обработку персональных данных</label>
+                </div>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-1">Отправить заявку</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade success-modal" id="successModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="h2">Ваша заявка успешно отправлена!</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Финансовый специалист свяжется с вами в ближайшее время.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/additional-methods.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wNumb.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
