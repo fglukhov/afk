@@ -16,7 +16,7 @@ $(document).ready(function () {
 
   $(".navbar-trigger").click(function () {
     $(this).toggleClass("active");
-    $(".nav").slideToggle(300);
+    $("div.nav").slideToggle(300);
   });
 
   if ($(".service-pros").length) {
