@@ -189,14 +189,29 @@ label.placeholder {
 .form-group-error label.placeholder {
   color: #ff5069; }
 
+@-webkit-keyframes autofill {
+  to {
+    color: #666;
+    background: transparent; } }
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+  -webkit-text-fill-color: #fff; }
+
 input[type=text],
 input[type=email],
 input[type=password],
-textarea {
+textarea,
+input[type=text]:-webkit-autofill,
+input[type=email]:-webkit-autofill,
+input[type=password]:-webkit-autofill,
+textarea:-webkit-autofill {
   width: 100%;
   margin: 0;
   padding: 12px 0;
-  background: transparent;
+  background: transparent !important;
   border: none;
   border-bottom: 1px solid #fff;
   font-family: "helveticaneue";
@@ -204,7 +219,10 @@ textarea {
   line-height: 27px;
   color: #fff;
   -webkit-appearance: none;
-  resize: none; }
+  resize: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
 
 .modal input[type=text],
 .modal input[type=email],
@@ -212,6 +230,12 @@ textarea {
 .modal textarea {
   border-bottom: 1px solid #c4ccd1;
   color: #2e344b; }
+
+.modal input:-webkit-autofill,
+.modal textarea:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+  -webkit-text-fill-color: #2e344b; }
 
 input[type=text].error,
 input[type=email].error,
@@ -1026,6 +1050,13 @@ ul.credit-pros-list > li:before {
   color: #2e344b;
   font-weight: 500;
   margin: 28px 0 18px 0; }
+
+.steps-item-ttl a.tel {
+  color: #2e344b;
+  text-decoration: none; }
+
+.steps-item-ttl a.tel:hover {
+  text-decoration: underline; }
 
 .steps-item-text {
   font-size: 15px;
@@ -2240,7 +2271,8 @@ footer {
   -webkit-background-size: cover;
   background-size: cover;
   min-height: 250px;
-  position: relative; }
+  position: relative;
+  display: block; }
 
 .services-tmb-ico {
   position: absolute;
@@ -2285,9 +2317,6 @@ footer {
 .cases-slider .slick-next {
   right: -20px;
   top: 250px; }
-
-.cases-item {
-  background: #fff; }
 
 .cases-item-data {
   padding: 105px 40px 40px 60px;
@@ -2357,10 +2386,12 @@ footer {
   margin: -52px 0 0 -30px; }
 
 .cases-item-r {
-  padding: 37px 40px 40px 20px;
+  background: #fff;
+  padding: 37px 40px 40px 40px;
   font-size: 15px;
   line-height: 24px;
-  position: relative; }
+  position: relative;
+  margin-left: -20px; }
 
 .cases-item-r:before {
   content: "";
@@ -2369,7 +2400,7 @@ footer {
   position: absolute;
   right: 100%;
   top: 155px;
-  margin-right: 20px;
+  margin-right: 0px;
   border-left: 42px solid transparent;
   border-right: 42px solid #fff;
   border-top: 21px solid transparent;

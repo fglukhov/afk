@@ -440,6 +440,8 @@ function calcCredit(S,p,n){
 
 function validateForms() {
 
+
+
   jQuery.validator.addClassRules('phone-email-group', {
     require_from_group: [1, ".phone-email-group"]
   });
@@ -495,6 +497,8 @@ function validateForms() {
   });
 
 }
+
+
 
 jQuery.extend(jQuery.validator.messages, {
   required: "Заполните поле.",

@@ -671,6 +671,10 @@
     bottom: 0;
     font-size: 18px;
     line-height: 24px; }
+  .cases-item-r {
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 20px; }
   .cases-item .col-xs-4,
   .cases-item .col-xs-8 {
     width: 100%; }
