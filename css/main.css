@@ -203,11 +203,7 @@ textarea:-webkit-autofill {
 input[type=text],
 input[type=email],
 input[type=password],
-textarea,
-input[type=text]:-webkit-autofill,
-input[type=email]:-webkit-autofill,
-input[type=password]:-webkit-autofill,
-textarea:-webkit-autofill {
+textarea {
   width: 100%;
   margin: 0;
   padding: 12px 0;
