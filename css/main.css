@@ -602,6 +602,11 @@ header .row > * {
   line-height: 15px;
   color: #fff; }
 
+.navbar-nav > li > a.active {
+  color: #4093ff;
+  text-decoration: none;
+}
+
 .nav .submenu {
   position: absolute;
   left: 0;
@@ -914,9 +919,9 @@ ul.credit-pros-list > li:before {
   padding-right: 52px;
   margin: 0px 0px 18px; }
 
-.pros-tmb:hover {
-  box-shadow: 0px 15px 50px 0px rgba(216, 222, 230, 0.85);
-  z-index: 10; }
+/*.pros-tmb:hover {*/
+  /*box-shadow: 0px 15px 50px 0px rgba(216, 222, 230, 0.85);*/
+  /*z-index: 10; }*/
 
 .pros-tmb:before {
   content: "";
@@ -928,8 +933,8 @@ ul.credit-pros-list > li:before {
   bottom: -1px;
   transition: all .6s ease; }
 
-.pros-tmb:hover:before {
-  border-color: #fff; }
+/*.pros-tmb:hover:before {*/
+  /*border-color: #fff; }*/
 
 .section-sub-ttl {
   font-size: 20px;
@@ -2218,9 +2223,9 @@ footer {
   display: table-cell;
   vertical-align: middle; }
 
-.who-tmb:hover {
-  box-shadow: 0px 15px 50px 0px rgba(216, 222, 230, 0.85);
-  z-index: 10; }
+/*.who-tmb:hover {*/
+  /*box-shadow: 0px 15px 50px 0px rgba(216, 222, 230, 0.85);*/
+  /*z-index: 10; }*/
 
 .who-tmb:before {
   content: "";
@@ -2232,8 +2237,8 @@ footer {
   bottom: -1px;
   transition: all .6s ease; }
 
-.who-tmb:hover:before {
-  border-color: #fff; }
+/*.who-tmb:hover:before {*/
+  /*border-color: #fff; }*/
 
 .who-tmb-pic {
   float: right;
@@ -2268,7 +2273,15 @@ footer {
   background-size: cover;
   min-height: 250px;
   position: relative;
-  display: block; }
+  display: block;
+  transition: all .3s ease;
+}
+
+.services-tmb:hover {
+  transform:scale(1.01);
+  box-shadow: 0 0 20px rgba(0,0,0,.4);
+  z-index: 10;
+}
 
 .services-tmb-ico {
   position: absolute;
